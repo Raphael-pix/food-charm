@@ -6,7 +6,7 @@ Food Charm is a cooking platform designed to help users discover and create reci
 
 ## Table of Contents
 
-- [Food charm](#Food charm)
+- Food charm
   - [About](#about)
   - [Table of Contents](#table-of-contents)
   - [Features](#features)
