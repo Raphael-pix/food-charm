@@ -128,7 +128,7 @@ git clone https://github.com/Raphael-pix/food-charm.git
    npx expo start
    ```
 
-4. Access the application at using Expo Go
+4. Access the application using Expo Go or any emulator
 
 ## API Documentation
 
