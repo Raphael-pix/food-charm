@@ -92,7 +92,21 @@ git clone https://github.com/Raphael-pix/food-charm.git
 
 1. Frontend configuration:
 
-- Update the API base URL in `/lib/config.js` if necessary
+- Update the Appwrite config in `/lib/config.js` 
+    ```
+    export const appwriteConfig = {
+        endpoint: "your__appwrite_endpoint",
+        platform: "your__appwrite_platform",
+        projectId: "your__appwrite_projectId",
+        databaseId: "your__appwrite_databaseId ",
+        userCollectionId: "your__appwrite_userCollectionId",
+        videosCollectionId: "your__appwrite_videosCollectionId",
+        recipesCollectionId: "your__appwrite_recipesCollectionIdt",
+        storageId: "your__appwrite_storageId",
+  };
+
+    ```
+- check out `https://youtu.be/ZBCUegTZF7M?si=_607VvFrEoVmi3Yb` to learn how to set up an appwrite account
 
 ## Running the Application
 
@@ -103,7 +117,7 @@ git clone https://github.com/Raphael-pix/food-charm.git
    ```bash
    cd sever
 
-   npm run start
+   npm start
    ```
 
 3. In a new terminal, run the frontend development server:
@@ -122,12 +136,13 @@ API documentation will be available at `http://localhost:5000/api-docs` when the
 
 ## Frontend Structure
 
-Designs for the user interface are available at `https://www.figma.com/design/bHWunlRH0mewHpvAJVNBW7/Food-Recipe-App-(Community)?node-id=0-1&t=CDxfXJmDVcynY5Vg-1`.
+Designs for the user interface are available at: `https://www.figma.com/design/bHWunlRH0mewHpvAJVNBW7/Food-Recipe-App-(Community)?node-id=0-1&t=CDxfXJmDVcynY5Vg-1`.
 
-The React.js frontend is organized as follows:
+The React native frontend is organized as follows:
 
+- `/app`: Page-level React Native components 
 - `/components`: Reusable React Native components
-- `app`: Page-level React Native components
+-  `/constants` : constant assets e.g. images and icons
 - `/context`: React store for state management
 - `/assets`: Static assets like images and global styles
 - `/lib`: Fucntions and other data
@@ -170,16 +185,7 @@ Detailed deployment guides for other platforms can be found in `DEPLOYMENT.md`.
 
 We welcome contributions from the community. Please read our [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct and the process for submitting pull requests.
 
-## Privacy
-
-We take user privacy seriously. Please review our [Privacy Policy](PRIVACY.md) for information on how we protect and use your data.
 
 ## License
 
-Food charm is licensed under the [MIT License](LICENSE.md).
-om.
-
-Join Food charm today and be part of a community that understands and supports the beautiful journey of motherhood!
-
-NOTE!
-The current version of Food charm is yet to be completed.
+Food charm is licensed under the [MIT License](LICENSE.md).om.
