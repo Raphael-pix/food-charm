@@ -39,7 +39,7 @@ Food Charm is a cooking platform designed to help users discover and create reci
 
 - **Design**: Figma
 - **Backend**: Node.js with Express.js
-- **Frontend**: React.js
+- **Frontend**: React Native
 - **Database**: Appwrite
 - **API**: RESTful API
 
