@@ -36,7 +36,7 @@ const ProfileHeader = ({
   };
   const logout = async () => {
     await signout();
-    router.replace("/Sign-in");
+    router.replace("/index");
     setUser(null);
     setIsLoggedIn(false);
   };

@@ -13,7 +13,7 @@ const Signin = () => {
     password: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const { setUser, setIsLoggedIn } = useGlobalContext();
+  const {user, setUser, setIsLoggedIn } = useGlobalContext();
   const submit = async () => {
     if (form.email === "" || form.password === "") {
       Alert.alert("Error", "Please fill in all the fields");

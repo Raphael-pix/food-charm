@@ -1,4 +1,4 @@
-import background from "../assets/images/background.png";
+import background from "../assets/images/Background.jpg";
 import empty from '../assets/images/empty-state.png';
 import cooking_videos from "../assets/images/cooking_videos.jpg"
 import cooking_recipes from "../assets/images/cooking_recipes.jpg"

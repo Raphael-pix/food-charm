@@ -22,19 +22,20 @@ const App = () => {
       <SafeAreaView className="h-full bg-white">
         <ScrollView contentContainerStyle={{ height: "100%" }}>
           <ImageBackground
-            className="h-full"
+            className="h-full relative"
             source={images.background}
             resizeMode="cover"
           >
-            <View className="space-y-1 h-full items-center justify-end px-4 pb-20">
+            <View className="space-y-1 h-full items-center justify-end px-4 pb-20 z-10">
               <Text className="text-white text-6xl font-pbold text-center leading-loose py-2">
-                Let's Cooking
+                Food Charm
               </Text>
               <Text className="text-white text-xl font-pregular ">
                 Find best recipies for cooking
               </Text>
               <CustomButton title="Start Cooking" icon={icons.rightArrow}handlePress={()=>router.push("/Sign-in")} otherStyles="w-[80%] mt-4"/>
             </View>
+            <View className="absolute w-full h-full bg-neutral-90/30 z-0"/>
           </ImageBackground>
         </ScrollView>
       </SafeAreaView>
